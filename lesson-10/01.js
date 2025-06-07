@@ -105,7 +105,7 @@ const controller = {
   },
   // your code
   deleteMovie(id) {
-    model.deleteMovie(id);           // Передача ID фильма в модель для удаления
+    model.deleteMovie(id);
     view.displayMessage("Фильм успешно удалён!");
   }
 }
