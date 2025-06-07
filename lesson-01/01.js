@@ -11,3 +11,5 @@ while (number <= 20) {
 }
 console.log(sum);
 
+console.log('akakak')
+
