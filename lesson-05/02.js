@@ -35,4 +35,16 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(objectOfGallery, nameOfGallery, newValue) {
+  for (const key in objectOfGallery) {
+    if (key === nameOfGallery) {
+      objectOfGallery[key] = newValue;
+      return
+    }
+
+
+  }
+  objectOfGallery[nameOfGallery] = newValue;
+}
+updateGallery(gallery, '2222', 'Leonardo da Vinci, 1503-1506')
+console.log(gallery);
